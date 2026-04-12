@@ -1,8 +1,16 @@
 
 body{
-  background-color: yellow;
+  background-color: lightgray;
+  margin: 20px 50px 20px 50px;
+
 }
 
 h1{
-  color: blue;
+  color: black;
+  text-align: center;
+}
+
+h2{
+  color: black;
+  text-align: left;
 }
