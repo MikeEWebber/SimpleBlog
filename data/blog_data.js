@@ -1,4 +1,6 @@
 
+
+// Array of Java Script objects 
 export const blogEntries = [{
   id: "1",
   category: "Development",
