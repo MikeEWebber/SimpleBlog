@@ -1,6 +1,6 @@
 
 body{
-  background-color: lightgray;
+  background-color: ivory;
   margin: 20px 50px 20px 50px;
 
 }
@@ -13,4 +13,60 @@ h1{
 h2{
   color: black;
   text-align: left;
+}
+
+
+
+.title-element{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  float: left;
+  width: 100%;
+}
+
+.spacer-element{
+  width: 100%;
+}
+
+.date-element{
+  color: darkgray;
+  float: right;
+  width: 100%;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.blog-element{
+  border-width: 2px;
+  border-style: solid;
+  border-color: lightgrey;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px #e0e0e0;
+  background-color: white;
+  
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-right{
+  text-align: right;
+}
+
+.read-more-button{
+  margin: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 40px;
+  
+
+  
+
+
 }
