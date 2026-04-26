@@ -2,7 +2,7 @@ import {blogEntries} from '../data/blog_data.js';
 
 let dataString = ``;
 
-// loop through all items in the blogEntries array and display
+// loop through all items in the blogEntries array and add to dataString
 
 blogEntries.forEach(element => {
     dataString = dataString + 
@@ -16,23 +16,22 @@ blogEntries.forEach(element => {
             </div>
                     
             <p class="summary-element">${element.summary} </p>
+            <p class="detail-element detail-element-hide">${element.detail} </p>
+
             <div class="btn-right">
-                <input type="button" class="read-more-button" value="Read More">
+                <input type="button" class="read-more-button js-more-button" data-id="${element.id}" value="Read More">
             </div>
 
             
         </div>
         `
 })
-
-
-
-
+// send the dataString to the HTML page. 
 document.querySelector('.js-blog-body-container').innerHTML = dataString;
 
+document.querySelectorAll('.js-more-button').forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log(button.dataset.id);
+    })
+});
 
-
-
-let greeting = 'hello';
-    
-    console.log(blogEntries[0].detail);
