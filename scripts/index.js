@@ -1,4 +1,4 @@
-import {blogEntries} from '../data/blog_data.js';
+import {blogEntries, getBlogEntryByID} from '../data/blog_data.js';
 
 let dataString = ``;
 
@@ -35,3 +35,5 @@ document.querySelectorAll('.js-more-button').forEach((button) => {
     })
 });
 
+let chosenEntry = getBlogEntryByID('1');
+console.log(chosenEntry.title);

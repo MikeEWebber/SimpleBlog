@@ -21,7 +21,20 @@ export const blogEntries = [{
   detail: "Details for the walk."
 }];
 
-// Need get item by ID
+
+
+export function getBlogEntryByID(id){
+
+  let selectedEntry;
+
+  blogEntries.forEach(entry => {
+    if (id === entry.id){
+      selectedEntry = entry;
+    }
+  });
+  return selectedEntry;
+
+}
 
 // Need get items by Category
 
