@@ -15,7 +15,15 @@ h2{
   text-align: left;
 }
 
+.general-button{
+  margin: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 40px;
 
+}
 
 .title-element{
   color: black;
