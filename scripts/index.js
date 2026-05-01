@@ -32,7 +32,8 @@ document.querySelector('.js-blog-body-container').innerHTML = dataString;
 document.querySelectorAll('.js-more-button').forEach((button) => {
     button.addEventListener('click', () => {
         console.log(button.dataset.id);
-        location.href = './detail.html' + `?id=${button.dataset.id}`;
+        window.location.replace(`./detail.html` + `?id=${button.dataset.id}`);
+        //location.href = './detail.html' + `?id=${button.dataset.id}`;
     })
 });
 
