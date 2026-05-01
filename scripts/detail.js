@@ -11,6 +11,6 @@ console.log("Param is: " + pageID);
 
 
 document.querySelector('.js-return-button').addEventListener('click', () => {
-  window.location.replace('../index.html')
+  window.location.replace(`SimpleBlog/../index.html`);
   //location.href = '../index.html';
 })
