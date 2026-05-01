@@ -11,5 +11,6 @@ console.log("Param is: " + pageID);
 
 
 document.querySelector('.js-return-button').addEventListener('click', () => {
-  location.href = '../index.html';
+  window.location.replace('../index.html')
+  //location.href = '../index.html';
 })
