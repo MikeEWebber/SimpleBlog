@@ -8,8 +8,15 @@ console.log("Param is: " + pageID);
 let blogEntry = getBlogEntryByID(pageID);
 
 let dataString =  `
-                  <p class="title-element"> ${blogEntry.title} </p>
-                  <p class=""> ${blogEntry.date} </p>
+                  
+                    <div class="header-container">
+                      <p class="title-element"> ${blogEntry.title} </p>
+                      <p class="spacer-element"></p>
+                      <p class="date-element"> ${blogEntry.date}</p>  
+                    </div>
+
+
+
                   <p class=""> ${blogEntry.summary} </p>
                   <p class=""> ${blogEntry.detail} </p>
 

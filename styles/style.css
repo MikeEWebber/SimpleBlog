@@ -27,7 +27,7 @@ h2{
 
 .title-element{
   color: black;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   float: left;
   width: 100%;
@@ -39,6 +39,7 @@ h2{
 
 .date-element{
   color: darkgray;
+  font-size: 24px;
   float: right;
   width: 100%;
   text-align: end;
