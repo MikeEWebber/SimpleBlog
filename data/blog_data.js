@@ -12,7 +12,7 @@ export const blogEntries = [{
   detail: "The data is stored in a separate Javascript file as an array of JavaScript objects."
 }, {
   id: "2",
-  category: "Walking",
+  category: "Walks",
   title: "Walk - Fairy steps",
   date: "23-04-2026",
   summary: "Summary of walk",
@@ -37,5 +37,18 @@ export function getBlogEntryByID(id){
 }
 
 // Need get items by Category
+export function blogEntriesByCategory(category){
+
+  let blogList = [];
+
+  blogEntries.forEach(entry => {
+    if (category === entry.category){
+      blogList.push(entry);
+    }
+  });
+
+  return blogList;
+
+}
 
 

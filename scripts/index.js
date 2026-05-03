@@ -1,10 +1,11 @@
-import {blogEntries, getBlogEntryByID} from '../data/blog_data.js';
+import {blogEntries, getBlogEntryByID, blogEntriesByCategory} from '../data/blog_data.js';
 
 let dataString = ``;
+displayBlogEntries(blogEntries);
+buttonEvents();
 
-// loop through all items in the blogEntries array and add to dataString
-
-blogEntries.forEach(element => {
+export function displayBlogEntries(selectedBlogEntries){
+    selectedBlogEntries.forEach(element => {
     dataString = dataString + 
         `
         <div class="blog-element">
@@ -25,17 +26,46 @@ blogEntries.forEach(element => {
             
         </div>
         `
-})
-// send the dataString to the HTML page. 
-document.querySelector('.js-blog-body-container').innerHTML = dataString;
+    })
+    // send the dataString to the HTML page. 
+    document.querySelector('.js-blog-body-container').innerHTML = dataString;
+}
 
-document.querySelectorAll('.js-more-button').forEach((button) => {
+function buttonEvents(){
+    document.querySelectorAll('.js-more-button').forEach((button) => {
     button.addEventListener('click', () => {
         console.log(button.dataset.id);
         window.location.replace(`./detail.html` + `?id=${button.dataset.id}`);
         //location.href = './detail.html' + `?id=${button.dataset.id}`;
     })
 });
+}
+
+
+
+document.querySelectorAll('.js-tab-links').forEach((button) =>{
+    button.addEventListener('click', () =>{
+        if (button.dataset.id === "Development"){
+            dataString = '';
+            displayBlogEntries(blogEntriesByCategory("Development"));
+            buttonEvents();
+        } else if (button.dataset.id=== "Walks"){
+            dataString = '';
+            displayBlogEntries(blogEntriesByCategory("Walks"));
+            buttonEvents();
+        } else if (button.dataset.id === "General"){
+            dataString = '';
+            displayBlogEntries(blogEntriesByCategory("General"));
+            buttonEvents();
+        } else {
+            dataString = '';
+            displayBlogEntries(blogEntries);
+            buttonEvents();
+        }
+    });
+})
 
 let chosenEntry = getBlogEntryByID('1');
 console.log(chosenEntry.title);
+
+console.log(blogEntriesByCategory("Walking"));
