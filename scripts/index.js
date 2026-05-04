@@ -3,6 +3,8 @@ import {blogEntries, getBlogEntryByID, blogEntriesByCategory} from '../data/blog
 let dataString = ``;
 displayBlogEntries(blogEntries);
 buttonEvents();
+makeTabActive("All");
+
 
 export function displayBlogEntries(selectedBlogEntries){
     selectedBlogEntries.forEach(element => {
@@ -41,7 +43,15 @@ function buttonEvents(){
 });
 }
 
-
+function makeTabActive(item){
+    // revove all active tabs
+    document.querySelectorAll('.js-tab-links').forEach((button) =>{
+        button.classList.remove("tab-button-made-active");
+    });
+    // add the correct active one
+    let myButton = document.getElementById(item);
+    myButton.classList.add("tab-button-made-active");
+}
 
 document.querySelectorAll('.js-tab-links').forEach((button) =>{
     button.addEventListener('click', () =>{
@@ -49,18 +59,22 @@ document.querySelectorAll('.js-tab-links').forEach((button) =>{
             dataString = '';
             displayBlogEntries(blogEntriesByCategory("Development"));
             buttonEvents();
+            makeTabActive("Development");
         } else if (button.dataset.id=== "Walks"){
             dataString = '';
             displayBlogEntries(blogEntriesByCategory("Walks"));
             buttonEvents();
+            makeTabActive("Walks");
         } else if (button.dataset.id === "General"){
             dataString = '';
             displayBlogEntries(blogEntriesByCategory("General"));
             buttonEvents();
+            makeTabActive("General");
         } else {
             dataString = '';
             displayBlogEntries(blogEntries);
             buttonEvents();
+            makeTabActive("All");
         }
     });
 })
