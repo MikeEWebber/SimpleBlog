@@ -8,7 +8,8 @@ makeTabActive("All");
 
 export function displayBlogEntries(selectedBlogEntries){
     selectedBlogEntries.forEach(element => {
-    dataString = dataString + 
+        
+        dataString = dataString + 
         `
         <div class="blog-element">
             <div class="header-container">
@@ -17,9 +18,13 @@ export function displayBlogEntries(selectedBlogEntries){
                 <p class="date-element"> ${element.date}</p>
                         
             </div>
-                    
-            <p class="summary-element">${element.summary} </p>
-            <p class="detail-element detail-element-hide">${element.detail} </p>
+
+            <div class="body-container">
+                <p class="summary-element">${element.summary} </p>
+                <img class="index-image" src=${element.photos} alt="image">
+
+            </div>
+
 
             <div class="btn-right">
                 <input type="button" class="read-more-button js-more-button" data-id="${element.id}" value="Read More">
