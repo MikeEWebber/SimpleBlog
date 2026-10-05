@@ -1,92 +1,4 @@
 
-body{
-  background-color: ivory;
-  margin: 20px 50px 20px 50px;
-
-}
-
-h1{
-  color: black;
-  text-align: center;
-}
-
-h2{
-  color: black;
-  text-align: left;
-}
-
-.general-button{
-  margin: 10px;
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 40px;
-
-}
-
-.title-element{
-  color: black;
-  font-size: 24px;
-  font-weight: 600;
-  float: left;
-  width: 100%;
-}
-
-.spacer-element{
-  width: 100%;
-}
-
-.date-element{
-  color: darkgray;
-  font-size: 24px;
-  float: right;
-  width: 100%;
-  text-align: end;
-  padding-right: 20px;
-}
-
-.blog-element{
-  border-width: 2px;
-  border-style: solid;
-  border-color: lightgrey;
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 4px 4px #e0e0e0;
-  background-color: white;
-  
-}
-
-.header-container{
-  display: flex;
-  flex-direction: row;
-}
-
-.body-container{
-  display: flex;
-  flex-direction: row;
-}
-
-.btn-right{
-  text-align: right;
-}
-
-.read-more-button{
-  margin: 10px;
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 40px;
-}
-
-.detail-element-hide{
-  visibility:collapse;
-}
-
-.detail-element{
-  font-family: 'Courier New', Courier, monospace;
-}
 
 .index-image{
   width: 250px;
@@ -99,43 +11,12 @@ h2{
   
 }
 
-
-
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  margin-bottom: 10px;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
+.flex-container{
+  display: flex;
+  padding: 20px;
   
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button:active {
-  background-color: #ccc; 
+  
 }
 
 
-.tab-button-made-active{
-  background-color: #ccc;
-  font-weight: 700;
-}
-
-.summary-element{
-  width: 75%;
-}
 

@@ -11,26 +11,32 @@ export function displayBlogEntries(selectedBlogEntries){
         
         dataString = dataString + 
         `
-        <div class="blog-element">
-            <div class="header-container">
-                <p class="title-element"> ${element.title} </p>
-                <p class="spacer-element"></p>
-                <p class="date-element"> ${element.date}</p>
-                        
+        <div class="col-12 col-md-6 col-xl-4">
+            <div >
+                <div class="card border-primary">
+                    <div class="card-header">
+                        ${element.date}
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">${element.title}</h4>
+                      <p class="card-text">${element.summary}</p>
+                    </div>
+                    <img class="index-image float-right" src=${element.photos} alt="Card image cap">
+
+                    
+                    <br>
+                    <div class="container h-100">
+                        <div class="d-flex h-100"> 
+                            <div class="align-self-end ml-auto">    
+                                <input type="button" class="btn btn-primary float-right js-more-button" data-id="${element.id}" value="Read More">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <br>
+                </div>
             </div>
-
-            <div class="body-container">
-                <p class="summary-element">${element.summary} </p>
-                <img class="index-image" src=${element.photos} alt="image">
-
-            </div>
-
-
-            <div class="btn-right">
-                <input type="button" class="read-more-button js-more-button" data-id="${element.id}" value="Read More">
-            </div>
-
-            
         </div>
         `
     })

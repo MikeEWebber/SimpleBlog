@@ -9,7 +9,7 @@ export const blogEntries = [{
   summary: 'Creation of a HTML, CSS and JavaScript blogging site with links to other static or JavaScript powered pages. The idea is that I can use it as a training execise and I can use it to show Evie how to style a website. She could even use it as the basis for her graphic design website.',
   link: "https://github.com/MikeEWebber/SimpleBlog",
   photos: "images/Blog001_1.jpg",
-  detail: 'The data is initially stored in a separate Javascript file as an array of JavaScript objects so that no changes are needed to the webpages when a new blog entry is added. The landing page \\n The '
+  detail: 'The data is initially stored in a separate Javascript file as an array of JavaScript objects so that no changes are needed to the webpages when a new blog entry is added. <p class="lead"> The landing page ... '
 }, {
   id: "2",
   category: "Walks",

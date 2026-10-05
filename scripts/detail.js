@@ -10,15 +10,15 @@ let blogEntry = getBlogEntryByID(pageID);
 let dataString =  `
                   
                     <div class="header-container">
-                      <p class="title-element"> ${blogEntry.title} </p>
-                      <p class="spacer-element"></p>
-                      <p class="date-element"> ${blogEntry.date}</p>  
+                      <p class="display-6 text-end"> ${blogEntry.date}</p>
+                      <p class="display-4"> ${blogEntry.title} </p>
                     </div>
+                  <br>
 
 
-
-                  <p class=""> ${blogEntry.summary} </p>
-                  <p class=""> ${blogEntry.detail} </p>
+                  <p class="lead"> ${blogEntry.summary} </p>
+                  <p class="lead"> ${blogEntry.detail} </p>
+                  <br>
 
                   `;
 
