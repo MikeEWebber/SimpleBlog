@@ -19,6 +19,33 @@ export const blogEntries = [{
   link: "",
   photos: "images/FairySteps001_1.jpg",
   detail: "Details for the walk."
+}, {
+  id: "3",
+  category: "Development",
+  title: "AI's impact on Sofware Development",
+  date: "06-10-2026",
+  summary: "Just because humanity can do something doesn't mean we should",
+  link: "",
+  photos: "images/AIRobot001_1.jpg",
+  detail: "Will we look back on the advent of AI in 10 or 15 years and think it was the best thing that happened to humanity or the worst?"
+}, {
+  id: "4",
+  category: "General",
+  title: "Are modern sports cars too fast?",
+  date: "06-10-2026",
+  summary: "I would suggest that the idea of a sports car is that it is fun to drive in a sporty manner but modern cars are now so fast and powerful that they can not be driven in a sporty manner without significantly breaking the law. ",
+  link: "",
+  photos: "images/SportsCars001_1.jpg",
+  detail: "Details ........"
+},{
+  id: "5",
+  category: "Development",
+  title: "Addition of new category - Media",
+  date: "06-10-2026",
+  summary: "I might want to add a few articles about books, films and CD's so I will add a new media category to group them all together. ",
+  link: "",
+  photos: "images/Media001_1.jpg",
+  detail: "Details ........"
 }];
 
 

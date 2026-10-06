@@ -13,7 +13,7 @@ export function displayBlogEntries(selectedBlogEntries){
         `
         <div class="col-12 col-md-6 col-xl-4">
             <div >
-                <div class="card border-primary">
+                <div class="card border-primary mb-3" >
                     <div class="card-header">
                         ${element.date}
                     </div>
