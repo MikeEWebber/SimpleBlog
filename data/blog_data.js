@@ -40,12 +40,21 @@ export const blogEntries = [{
 },{
   id: "5",
   category: "Development",
-  title: "Addition of new category - Media",
+  title: "Addition of new Media category to Blog.",
   date: "06-10-2026",
-  summary: "I might want to add a few articles about books, films and CD's so I will add a new media category to group them all together. ",
+  summary: "I might want to add a few Blog articles about books, films and CD's so I will add a new media category to group them all together. ",
   link: "",
   photos: "images/Media001_1.jpg",
-  detail: "Details ........"
+  detail: '1. Add new Media button to the navbar in the index.html file. <p class="lead"> 2. Add new event listener to the for each loop in index.js <p class="lead"> 3. Add test data item to blog-data.js'
+},{
+  id: "6",
+  category: "Media",
+  title: "Top 10 Films",
+  date: "07-10-2026",
+  summary: "My choice of top 10 films of all time. Plase note these may change over time.",
+  link: "",
+  photos: "images/Top10Films001_1.jpg",
+  detail: '1. Man On Fire (2004) <p class="lead"> 2. Manhunter (1986) <p class="lead"> 3. Jaws (1975) <p class="lead"> 4. Shawshank Redemption (1994) <p class="lead"> 5. Aliens (1986) <p class="lead"> 6. In Bruge (2008)<p class="lead"> 7. Pans Labyrinth (2007) <p class="lead"> 8. Jackie Brown (1997)<p class="lead"> 9. Life Is Beautiful (1999) <p class="lead"> 10. Unforgiven (1992)'
 }];
 
 

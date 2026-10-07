@@ -81,7 +81,12 @@ document.querySelectorAll('.js-tab-links').forEach((button) =>{
             displayBlogEntries(blogEntriesByCategory("General"));
             buttonEvents();
             makeTabActive("General");
-        } else {
+        }  else if (button.dataset.id === "Media"){
+            dataString = '';
+            displayBlogEntries(blogEntriesByCategory("Media"));
+            buttonEvents();
+            makeTabActive("Media");
+        }else {
             dataString = '';
             displayBlogEntries(blogEntries);
             buttonEvents();
